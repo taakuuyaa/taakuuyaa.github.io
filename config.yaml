@@ -1,0 +1,80 @@
+baseURL: 'https://taakuuyaa.github.io/'
+title: taakuuya's Blog
+author: taakuuyaa
+paginate: 5
+languageCode: ja
+DefaultContentLanguage: ja
+enableInlineShortcodes: true
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Posts
+      url: posts/
+      weight: 2
+    - name: Tags
+      url: tags/
+      weight: 3
+    - name: Categories
+      url: categories/
+      weight: 4
+    - name: Search
+      url: search/
+      weight: 5
+
+taxonomies:
+  category: categories
+  tag: tags
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "taakuuya's Blog"
+  author: taakuuyaa
+  ShowReadingTime: true
+  SetThemeAuto: true
+  contentTypeName: posts
+  defaultTheme: auto
+  ShowShareButtons: true
+  profileMode:
+    enabled: false
+    title: Welcome to my blog
+    imageUrl: '/avatar.jpg'
+    imageTitle: avatar image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Archives
+        url: archives
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: twitter
+      url: 'https://twitter.com/_taakuuyaa'
+    - name: github
+      url: 'https://github.com/taakuuyaa'
+
+
+
