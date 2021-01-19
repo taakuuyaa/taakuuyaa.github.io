@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://taakuuyaa.github.io/sitemap.xml
