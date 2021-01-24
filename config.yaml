@@ -56,8 +56,8 @@ params:
   defaultTheme: auto
   ShowShareButtons: false
   profileMode:
-    enabled: false
-    title: Welcome to my blog
+    enabled: true
+    title: "Hi there \U0001F44B"
     imageUrl: '/avatar.jpg'
     imageTitle: avatar image
     buttons:
@@ -76,5 +76,12 @@ params:
     - name: github
       url: 'https://github.com/taakuuyaa'
 
+  # favicon
+  assets:
+    favicon: '/favicon.ico'
+    favicon16x16: '/favicon.ico'
+    favicon32x32: '/favicon.ico'
+    apple_touch_icon: '/avatar.jpg'
+    safari_pinned_tab: '/avatar.jpg'
 
 
