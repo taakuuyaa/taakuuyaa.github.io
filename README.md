@@ -2,5 +2,5 @@
 Hugo  
 https://gohugo.io/
   
-themes  
+Themes  
 https://themes.gohugo.io/hugo-papermod/
