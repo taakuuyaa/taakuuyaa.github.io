@@ -1,5 +1,5 @@
 baseURL: 'https://taakuuyaa.github.io/'
-title: taakuuya's Blog
+title: taakuuyaa's Blog
 author: taakuuyaa
 paginate: 5
 languageCode: ja
@@ -48,7 +48,7 @@ outputs:
 
 params:
   env: production
-  description: "taakuuya's Blog"
+  description: "taakuuyaa's Blog"
   author: taakuuyaa
   ShowReadingTime: true
   SetThemeAuto: true
