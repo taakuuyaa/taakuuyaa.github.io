@@ -81,7 +81,7 @@ params:
     favicon: '/favicon.ico'
     favicon16x16: '/favicon.ico'
     favicon32x32: '/favicon.ico'
-    apple_touch_icon: '/favicon.ico'
+    apple_touch_icon: '/safari_pinned_tab'
     safari_pinned_tab: '/favicon.ico'
 
 
