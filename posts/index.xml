@@ -8,12 +8,23 @@
     <language>ja</language>
     <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://taakuuyaa.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HUGOを使ってブログを作ってみる</title>
-      <link>https://taakuuyaa.github.io/posts/test-post/</link>
+      <title>HUGOを使ってブログを作る</title>
+      <link>https://taakuuyaa.github.io/posts/create-blog-with-hugo/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://taakuuyaa.github.io/posts/test-post/</guid>
-      <description>これから書く </description>
+      <guid>https://taakuuyaa.github.io/posts/create-blog-with-hugo/</guid>
+      <description>はじめに 以下の理由からHUGOを使用してブログを作ってみました！
+ 個人的なアウトプットする場所が欲しい スタイル(CSS)を書くのは面倒くさい SSG(静的サイトジェネレータ)を試してみたい  HUGOは静的サイトジェネレータです。
+Markdownで書かれたファイル（記事）をテンプレートエンジンを通してHTMLにしてくれます。 また、テーマが多く公開されていて簡単にスタイルの整ったページを作れます。
+導入 インストール brew install hugo 確認 hugo version ❯ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown テーマの適応 今回はPaperModをテーマとして使用します。
+テーマのインストールについてはこちら を参照してください。
+記事ファイルの作成 hugo new &amp;lt;作成するファイルのパス名&amp;gt; contentディレクトリ配下に.mdファイルが作成されます。
+テーマで使用されるparamsについてはこちら を参照して適宜.mdファイルを変更してください。
+公開する 今回はGitHub Pagesでホスティングすることにしました。
+また、記事を書いてPush時に自動でデプロイされるようにGitHub Actionsを使いました。 （自分は一つのリポジトリに静的コンテンツを生成するコードと生成された静的コンテンツを一緒に管理したかったので若干参考のリンクと異なります）
+GitHub Pages でホスト  Hugo + GitHub Pages + GitHub Actions で独自ドメインのウェブサイトを構築する
+ GitHub Actionsで自動デプロイ  GitHub Actions による GitHub Pages への自動デプロイ
+ さいごに 非常に簡単にビジュアルの良いブログが簡単に作れてしまいました！</description>
     </item>
     
   </channel>
