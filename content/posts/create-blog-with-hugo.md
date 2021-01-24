@@ -61,4 +61,4 @@ contentディレクトリ配下に`.md`ファイルが作成されます。
 非常に簡単にビジュアルの良いブログが簡単に作れてしまいました！  
 今回はGitHub Pagesにホストすることにしましたが他にもNetlifyやVercelでもホスティングすることができます。  
 今後はこちらのブログに日々のアウトプットをしていこうと思います。  
-このブロクの[リポジトリ](https://github.com/taakuuyaa/taakuuyaa.github.io)
+このブログの[リポジトリ](https://github.com/taakuuyaa/taakuuyaa.github.io)
