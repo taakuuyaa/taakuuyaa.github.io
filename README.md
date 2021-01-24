@@ -12,7 +12,7 @@ https://themes.gohugo.io/hugo-papermod/
 # ローカルサーバを立ち上げる(draftコンテンツを含む)
 hugo server -D
 
-# 静的ファイルを生成する
+# 静的コンテンツを生成する
 hugo
 
 # contentディレクトリ配下にファイルを作成する
