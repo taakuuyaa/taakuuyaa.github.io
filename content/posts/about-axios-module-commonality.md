@@ -4,7 +4,7 @@ date: "2021-02-05 00:00:00+0900"
 tags: ["axios", "Nuxt"]
 showToc: true
 TocOpen: false
-draft: false
+draft: true
 ---
 
 ## はじめに
