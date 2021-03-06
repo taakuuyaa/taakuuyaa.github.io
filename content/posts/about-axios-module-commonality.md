@@ -32,7 +32,7 @@ etc...
 > Nuxt.jsでaxiosの共通処理を作成し、API呼び出し処理をラップして使用する  
 > https://qiita.com/itouuuuuuuuu/items/4132e3b7ddf2cbf02442
 
-axios-moduleもissueにも共通化に関するものがあったので参考に実装してみました。
+axios-moduleのissueにも共通化に関するものがあったので参考に実装してみました。
 > Can I use axios-module in non-vue files? #28  
 > https://github.com/nuxt-community/axios-module/issues/28#issuecomment-340743659
 
