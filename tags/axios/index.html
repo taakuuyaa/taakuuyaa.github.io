@@ -3,10 +3,10 @@
 なぜ共通化するのか？ エンドポイントの修正による変更が大変
 あちこちで↓のようなコードが呼ばれていると検索・置換を使って修正するしかない。 this.$axios.$get('https://example.com/api/users') ヘッダー等に付与する情報を適宜変更したい 可読性が上がる
 axiosの処理を↓のように呼び出せるようになると見やすい this.$axios.$get('https://example.com/api/users') // ↓ 変更 api.getUsers() etc…
-共通化の方法について 調査しみるとプラグイン初期化のタイミングでアクセスできる$axiosをexportしている例をよく見かけました。
+共通化の方法について 調査してみるとプラグイン初期化のタイミングでアクセスできる$axiosをexportしている例をよく見かけました。
 Nuxt.jsでaxiosの共通処理を作成し、API呼び出し処理をラップして使用する
 https://qiita.com/itouuuuuuuuu/items/4132e3b7ddf2cbf02442
-axios-moduleもissueにも共通化に関するものがあったので参考に実装してみました。
+axios-moduleのissueにも共通化に関するものがあったので参考に実装してみました。
 Can I use axios-module in non-vue files? #28
 https://github.com/nuxt-community/axios-module/issues/28#issuecomment-340743659
 実際にうまく動いているように思えましたが一つ問題がありました。
