@@ -47,7 +47,9 @@ axios-moduleもissueにも共通化に関するものがあったので参考に
 > axios module: axios.setToken where to run? #298  
 > https://github.com/nuxt-community/axios-module/issues/298#issuecomment-318165164
 
-どうやら$axiosをimport/exportすることは推奨されていないようでした。  
+どうやら$axiosはグローバルとして定義され同時リクエスト時に共有されるため、
+import/exportすることは推奨されていないようでした。
+
 さらに調査して以下の方法にたどり着きました。
 > How to import module to external file #101  
 > https://github.com/nuxt-community/axios-module/issues/101#issuecomment-365909923
@@ -77,8 +79,7 @@ export default ({ $axios }, inject) => {
 ```
 
 ## さいごに
-axios-moduleは普通axiosと違うNuxtに統合されたaxiosのため、  
-import/exportして使うやり方が推奨されないなどの拡張/共通化することに癖がありました。  
-共通化して使うものはどのコンテキスト（SSR/CSR/Store/Component）でも  
-使えるように実装に配慮しなければいけない点は非常に考えるのが難しいと感じました。
+axios-moduleは普通axiosと違いNuxtに統合されたaxiosのため、
+import/exportして使うやり方が推奨されないなどの拡張/共通化することに癖がありました。
+また、共通化する場合はどのコンテキスト（SSR/CSR/Store/Component）でも呼ばれることを考慮しなければならないので少し大変でした。
 
