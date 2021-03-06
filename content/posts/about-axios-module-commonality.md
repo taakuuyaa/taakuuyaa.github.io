@@ -28,7 +28,7 @@ api.getUsers()
 etc...
 
 ## 共通化の方法について
-調査しみるとプラグイン初期化のタイミングでアクセスできる`$axios`をexportしている例をよく見かけました。  
+調査してみるとプラグイン初期化のタイミングでアクセスできる`$axios`をexportしている例をよく見かけました。  
 > Nuxt.jsでaxiosの共通処理を作成し、API呼び出し処理をラップして使用する  
 > https://qiita.com/itouuuuuuuuu/items/4132e3b7ddf2cbf02442
 
