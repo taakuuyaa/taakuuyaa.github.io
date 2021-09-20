@@ -10,6 +10,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: false # only hide on current single page
 description: "最近のデスク環境についてまとめてみました。"
+draft: true
 ---
 
 ## 仕事環境の変化
