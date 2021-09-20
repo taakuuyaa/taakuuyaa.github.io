@@ -6,58 +6,7 @@
     <description>Recent content on taakuuyaa&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://taakuuyaa.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>デスク環境について</title>
-      <link>https://taakuuyaa.github.io/posts/about-my-desk/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0900</pubDate>
-      
-      <guid>https://taakuuyaa.github.io/posts/about-my-desk/</guid>
-      <description>仕事環境の変化 新型コロナウィルスの影響でリモートワークが当たり前になり、
-家で仕事をすることがほとんどになった。
-会社に出社するという行動がなくなり長時間座って作業することが
-より一層長くなり健康的にもよろしくないと思いデスク環境を見直してみました。
-チェア 今までは1万円程度のオフィスチェアを使っていましたが
-長時間座り続けると腰に負担がかかりストレスを感じていました。
-そこでエルゴヒューマンのオフィスチェアを購入してみました！！
-エルゴヒューマン プロ オットマン
-GOOD  座り心地は文句なく良い 長時間の作業でもまったく腰が痛くならない 調整機構が多く自分の姿勢に合わせられる  BAD  オットマンは使うことがあまりない ホコリが溜まる  スタンディングデスク 前述のチェアだけでも十分QOLを上げることができたがそれが故にずっと座っている状況が生まれてしまった笑
-長時間座り続けることが不健康なのは明確なのでスタンディングデスクの導入を決意しました！
-購入したのはこちら↓
-スタンディングデスク E7セット（電動昇降式）
-GOOD  立って作業できる（当たり前） 足が寒くなくなった メリハリが生まれた  BAD  組み立てが大変 重たい 配線がめんどう  まとめ チェアとスタンディングデスクを導入したことで以前より遥かに健康的に仕事ができる環境ができました！
-特にスタンディングデスクは立って作業ができるのでぼーっと作業する時間が減ったり、足の寒さが立つことでなくなりました!!!</description>
-    </item>
-    
-    <item>
-      <title>@nuxt/axiosを使ったAPI呼び出し共通化について</title>
-      <link>https://taakuuyaa.github.io/posts/about-axios-module-commonality/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
-      
-      <guid>https://taakuuyaa.github.io/posts/about-axios-module-commonality/</guid>
-      <description>はじめに Nuxt.jsで@nuxt/axios(axios-module)を使いSSR・Store・コンポーネントなどの 様々なコンテキストに対応するaxiosの共通化に少し癖があったので備忘録として残します。
-なぜ共通化するのか？  エンドポイントの修正による変更が大変
-あちこちで↓のようなコードが呼ばれていると検索・置換を使って修正するしかない。  this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;)  ヘッダー等に付与する情報を適宜変更したい 可読性が上がる
-axiosの処理を↓のように呼び出せるようになると見やすい  this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;) // ↓ 変更 api.getUsers() etc&amp;hellip;
-共通化の方法について 調査してみるとプラグイン初期化のタイミングでアクセスできる$axiosをexportしている例をよく見かけました。
- Nuxt.jsでaxiosの共通処理を作成し、API呼び出し処理をラップして使用する
-https://qiita.com/itouuuuuuuuu/items/4132e3b7ddf2cbf02442
- axios-moduleのissueにも共通化に関するものがあったので参考に実装してみました。
- Can I use axios-module in non-vue files? #28
-https://github.com/nuxt-community/axios-module/issues/28#issuecomment-340743659
- 実際にうまく動いているように思えましたが一つ問題がありました。
-リクエストヘッダーにはセッションごとに違うトークンを付与して、 サーバ側で実行されるフック(fetch/asyncData)でリクエストを行う実装を行いました。
-複数のブラウザ（セッションがことなる）で同時にリクエストをしたところ 後からリクエストしたレスポンスで返されるべき情報が返されてしまいました。
-この現象について調べてみたところ以下のissueが参考なりました。
- axios module: axios.setToken where to run? #298
-https://github.com/nuxt-community/axios-module/issues/298#issuecomment-318165164
- どうやら$axiosはグローバルとして定義され同時リクエスト時に共有されるため、 import/exportすることは推奨されていないようでした。
-さらに調査して以下の方法にたどり着きました。
- How to import module to external file #101
-https://github.com/nuxt-community/axios-module/issues/101#issuecomment-365909923
-  Organize and decouple your API calls in Nuxt.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://taakuuyaa.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HUGOを使ってブログを作る</title>
       <link>https://taakuuyaa.github.io/posts/create-blog-with-hugo/</link>
