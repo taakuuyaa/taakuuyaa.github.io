@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>taakuuyaa&#39;s Blog</title>
-    <link>https://taakuuyaa.github.io/</link>
+    <link>https://blog.taakuuyaa.dev/</link>
     <description>Recent content on taakuuyaa&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://taakuuyaa.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.taakuuyaa.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>@nuxt/axiosを使ったAPI呼び出し共通化について</title>
-      <link>https://taakuuyaa.github.io/posts/about-axios-module-commonality/</link>
+      <link>https://blog.taakuuyaa.dev/posts/about-axios-module-commonality/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://taakuuyaa.github.io/posts/about-axios-module-commonality/</guid>
+      <guid>https://blog.taakuuyaa.dev/posts/about-axios-module-commonality/</guid>
       <description>はじめに Nuxt.jsで@nuxt/axios(axios-module)を使いSSR・Store・コンポーネントなどの 様々なコンテキストに対応するaxiosの共通化に少し癖があったので備忘録として残します。
 なぜ共通化するのか？  エンドポイントの修正による変更が大変
 あちこちで↓のようなコードが呼ばれていると検索・置換を使って修正するしかない。  this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;)  ヘッダー等に付与する情報を適宜変更したい 可読性が上がる
@@ -38,10 +38,10 @@ https://github.com/nuxt-community/axios-module/issues/101#issuecomment-365909923
     
     <item>
       <title>HUGOを使ってブログを作る</title>
-      <link>https://taakuuyaa.github.io/posts/create-blog-with-hugo/</link>
+      <link>https://blog.taakuuyaa.dev/posts/create-blog-with-hugo/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://taakuuyaa.github.io/posts/create-blog-with-hugo/</guid>
+      <guid>https://blog.taakuuyaa.dev/posts/create-blog-with-hugo/</guid>
       <description>はじめに 以下の理由からHUGOを使用してブログを作ってみました！
  個人的なアウトプットする場所が欲しい スタイル(CSS)を書くのは面倒くさい SSG(静的サイトジェネレータ)を試してみたい  HUGOは静的サイトジェネレータです。
 Markdownで書かれたファイル（記事）をテンプレートエンジンを通してHTMLにしてくれます。 また、テーマが多く公開されていて簡単にスタイルの整ったページを作れます。
@@ -58,19 +58,19 @@ GitHub Pages でホスト  Hugo + GitHub Pages + GitHub Actions で独自ドメ�
     
     <item>
       <title>Archive</title>
-      <link>https://taakuuyaa.github.io/archives/</link>
+      <link>https://blog.taakuuyaa.dev/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://taakuuyaa.github.io/archives/</guid>
+      <guid>https://blog.taakuuyaa.dev/archives/</guid>
       <description>archive</description>
     </item>
     
     <item>
       <title>Search</title>
-      <link>https://taakuuyaa.github.io/search/</link>
+      <link>https://blog.taakuuyaa.dev/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://taakuuyaa.github.io/search/</guid>
+      <guid>https://blog.taakuuyaa.dev/search/</guid>
       <description>search</description>
     </item>
     
