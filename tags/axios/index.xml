@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>axios on taakuuyaa&#39;s Blog</title>
-    <link>https://blog.taakuuyaa.dev/tags/axios/</link>
+    <link>https://taakuuyaa.dev/tags/axios/</link>
     <description>Recent content in axios on taakuuyaa&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.taakuuyaa.dev/tags/axios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://taakuuyaa.dev/tags/axios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>@nuxt/axiosを使ったAPI呼び出し共通化について</title>
-      <link>https://blog.taakuuyaa.dev/posts/about-axios-module-commonality/</link>
+      <link>https://taakuuyaa.dev/posts/about-axios-module-commonality/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.taakuuyaa.dev/posts/about-axios-module-commonality/</guid>
+      <guid>https://taakuuyaa.dev/posts/about-axios-module-commonality/</guid>
       <description>はじめに Nuxt.jsで@nuxt/axios(axios-module)を使いSSR・Store・コンポーネントなどの 様々なコンテキストに対応するaxiosの共通化に少し癖があったので備忘録として残します。
 なぜ共通化するのか？  エンドポイントの修正による変更が大変
 あちこちで↓のようなコードが呼ばれていると検索・置換を使って修正するしかない。  this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;)  ヘッダー等に付与する情報を適宜変更したい 可読性が上がる
