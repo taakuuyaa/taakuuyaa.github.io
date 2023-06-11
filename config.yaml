@@ -1,5 +1,5 @@
 baseURL: 'https://taakuuyaa.github.io/'
-title: taakuuyaa's Blog
+title: My Blog
 author: taakuuyaa
 paginate: 5
 languageCode: ja
@@ -78,7 +78,7 @@ params:
 
   # favicon
   assets:
-    favicon: '/favicon.ico'
+    favicon: '/blog.svg'
     favicon16x16: '/favicon.ico'
     favicon32x32: '/favicon.ico'
     apple_touch_icon: '/apple-touch-icon-180x180.png'
