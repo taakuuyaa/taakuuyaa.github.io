@@ -78,9 +78,9 @@ params:
 
   # favicon
   assets:
-    favicon: '/blog.svg'
-    favicon16x16: '/blog.svg'
-    favicon32x32: '/blog.svg'
+    favicon: '/favicon.ico'
+    favicon16x16: '/favicon.ico'
+    favicon32x32: '/favicon.ico'
     apple_touch_icon: '/apple-touch-icon-180x180.png'
     safari_pinned_tab: '/favicon.ico'
 
