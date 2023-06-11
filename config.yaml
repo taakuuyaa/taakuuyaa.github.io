@@ -57,7 +57,7 @@ params:
   ShowShareButtons: false
   profileMode:
     enabled: true
-    title: "Hi there \U0001F44B"
+    title: "Hello there \U0001F44B"
     imageUrl: '/avatar.jpg'
     imageTitle: avatar image
     buttons:
@@ -67,7 +67,7 @@ params:
         url: archives
 
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Hello there \U0001F44B"
     Content: Welcome to my blog
 
   socialIcons:
