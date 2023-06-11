@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on taakuuyaa&#39;s Blog</title>
     <link>https://taakuuyaa.dev/posts/</link>
@@ -14,26 +14,29 @@
       
       <guid>https://taakuuyaa.dev/posts/about-axios-module-commonality/</guid>
       <description>はじめに Nuxt.jsで@nuxt/axios(axios-module)を使いSSR・Store・コンポーネントなどの 様々なコンテキストに対応するaxiosの共通化に少し癖があったので備忘録として残します。
-なぜ共通化するのか？  エンドポイントの修正による変更が大変
-あちこちで↓のようなコードが呼ばれていると検索・置換を使って修正するしかない。  this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;)  ヘッダー等に付与する情報を適宜変更したい 可読性が上がる
-axiosの処理を↓のように呼び出せるようになると見やすい  this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;) // ↓ 変更 api.getUsers() etc&amp;hellip;
+なぜ共通化するのか？ エンドポイントの修正による変更が大変
+あちこちで↓のようなコードが呼ばれていると検索・置換を使って修正するしかない。 this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;) ヘッダー等に付与する情報を適宜変更したい 可読性が上がる
+axiosの処理を↓のように呼び出せるようになると見やすい this.$axios.$get(&amp;#39;https://example.com/api/users&amp;#39;) // ↓ 変更 api.getUsers() etc&amp;hellip;
 共通化の方法について 調査してみるとプラグイン初期化のタイミングでアクセスできる$axiosをexportしている例をよく見かけました。
- Nuxt.jsでaxiosの共通処理を作成し、API呼び出し処理をラップして使用する
+Nuxt.jsでaxiosの共通処理を作成し、API呼び出し処理をラップして使用する
 https://qiita.com/itouuuuuuuuu/items/4132e3b7ddf2cbf02442
- axios-moduleのissueにも共通化に関するものがあったので参考に実装してみました。
- Can I use axios-module in non-vue files? #28
+axios-moduleのissueにも共通化に関するものがあったので参考に実装してみました。
+Can I use axios-module in non-vue files? #28
 https://github.com/nuxt-community/axios-module/issues/28#issuecomment-340743659
- 実際にうまく動いているように思えましたが一つ問題がありました。
+実際にうまく動いているように思えましたが一つ問題がありました。
 リクエストヘッダーにはセッションごとに違うトークンを付与して、 サーバ側で実行されるフック(fetch/asyncData)でリクエストを行う実装を行いました。
 複数のブラウザ（セッションがことなる）で同時にリクエストをしたところ 後からリクエストしたレスポンスで返されるべき情報が返されてしまいました。
 この現象について調べてみたところ以下のissueが参考なりました。
- axios module: axios.setToken where to run? #298
+axios module: axios.setToken where to run? #298
 https://github.com/nuxt-community/axios-module/issues/298#issuecomment-318165164
- どうやら$axiosはグローバルとして定義され同時リクエスト時に共有されるため、 import/exportすることは推奨されていないようでした。
+どうやら$axiosはグローバルとして定義され同時リクエスト時に共有されるため、 import/exportすることは推奨されていないようでした。
 さらに調査して以下の方法にたどり着きました。
- How to import module to external file #101
+How to import module to external file #101
 https://github.com/nuxt-community/axios-module/issues/101#issuecomment-365909923
-  Organize and decouple your API calls in Nuxt.</description>
+Organize and decouple your API calls in Nuxt.js
+https://blog.lichter.io/posts/nuxt-api-call-organization-and-decoupling/
+api用の別プラグインを定義してそこに$axiosインスタンスを注入する方法でした。
+// api/apiFactory.js export default $axios =&amp;gt; ({ getUsers() { return $axios.</description>
     </item>
     
     <item>
@@ -43,7 +46,7 @@ https://github.com/nuxt-community/axios-module/issues/101#issuecomment-365909923
       
       <guid>https://taakuuyaa.dev/posts/create-blog-with-hugo/</guid>
       <description>はじめに 以下の理由からHUGOを使用してブログを作ってみました！
- 個人的なアウトプットする場所が欲しい スタイル(CSS)を書くのは面倒くさい SSG(静的サイトジェネレータ)を試してみたい  HUGOは静的サイトジェネレータです。
+個人的なアウトプットする場所が欲しい スタイル(CSS)を書くのは面倒くさい SSG(静的サイトジェネレータ)を試してみたい HUGOは静的サイトジェネレータです。
 Markdownで書かれたファイル（記事）をテンプレートエンジンを通してHTMLにしてくれます。 また、テーマが多く公開されていて簡単にスタイルの整ったページを作れます。
 導入 インストール brew install hugo 確認 hugo version ❯ hugo version Hugo Static Site Generator v0.80.0/extended darwin/amd64 BuildDate: unknown テーマの適応 今回はPaperModをテーマとして使用します。
 テーマのインストールについてはこちら を参照してください。
@@ -51,9 +54,12 @@ Markdownで書かれたファイル（記事）をテンプレートエンジン
 テーマで使用されるparamsについてはこちら を参照して適宜.mdファイルを変更してください。
 公開する 今回はGitHub Pagesでホスティングすることにしました。
 また、記事を書いてPush時に自動でデプロイされるようにGitHub Actionsを使いました。 （自分は一つのリポジトリに静的コンテンツを生成するコードと生成された静的コンテンツを一緒に管理したかったので若干参考のリンクと異なります）
-GitHub Pages でホスト  Hugo + GitHub Pages + GitHub Actions で独自ドメインのウェブサイトを構築する
- GitHub Actionsで自動デプロイ  GitHub Actions による GitHub Pages への自動デプロイ
- さいごに 非常に簡単にビジュアルの良いブログが簡単に作れてしまいました！</description>
+GitHub Pages でホスト Hugo + GitHub Pages + GitHub Actions で独自ドメインのウェブサイトを構築する
+GitHub Actionsで自動デプロイ GitHub Actions による GitHub Pages への自動デプロイ
+さいごに 非常に簡単にビジュアルの良いブログが簡単に作れてしまいました！
+今回はGitHub Pagesにホストすることにしましたが他にもNetlifyやVercelでもホスティングすることができます。
+今後はこちらのブログに日々のアウトプットをしていこうと思います。
+このブログのリポジトリ</description>
     </item>
     
   </channel>

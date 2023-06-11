@@ -1,57 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://taakuuyaa.dev/posts/about-axios-module-commonality/</loc>
     <lastmod>2021-02-05T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/tags/axios/</loc>
     <lastmod>2021-02-05T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/tags/nuxt/</loc>
     <lastmod>2021-02-05T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/posts/</loc>
     <lastmod>2021-02-05T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/</loc>
     <lastmod>2021-02-05T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/tags/</loc>
     <lastmod>2021-02-05T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/tags/hugo/</loc>
     <lastmod>2021-01-19T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/posts/create-blog-with-hugo/</loc>
     <lastmod>2021-01-19T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/archives/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://taakuuyaa.dev/search/</loc>
   </url>
-  
 </urlset>
