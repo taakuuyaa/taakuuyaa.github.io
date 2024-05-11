@@ -71,7 +71,7 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: twitter
+    - name: x
       url: 'https://twitter.com/taakuuyaa_'
     - name: github
       url: 'https://github.com/taakuuyaa'
