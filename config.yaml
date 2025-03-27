@@ -1,7 +1,9 @@
 baseURL: 'https://taakuuyaa.github.io/'
-title: My Blog
+copyright: '© 2018-2025 taakuuyaa'
+title: Profile
 author: taakuuyaa
-paginate: 5
+pagination:
+  pagerSize: 5
 languageCode: ja
 DefaultContentLanguage: ja
 enableInlineShortcodes: true
@@ -12,29 +14,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-187620483-1
-
 minify:
   disableXML: true
   minifyOutput: true
-
-menu:
-  main:
-    - name: Home
-      url: /
-      weight: 1
-    - name: Posts
-      url: posts/
-      weight: 2
-    - name: Tags
-      url: tags/
-      weight: 3
-    - name: Categories
-      url: categories/
-      weight: 4
-    - name: Search
-      url: search/
-      weight: 5
 
 taxonomies:
   category: categories
@@ -55,31 +37,20 @@ params:
   contentTypeName: posts
   defaultTheme: auto
   ShowShareButtons: false
+  
   profileMode:
     enabled: true
-    title: "Hello there \U0001F44B"
-    imageUrl: '/avatar.jpg'
-    imageTitle: avatar image
+    title: "Hello there 👋"
+    subtitle: "I'm taakuuyaa, a software engineer."
+    imageUrl: '/icon.png'
+    imageTitle: icon image
     buttons:
-      - name: Posts
-        url: posts
-      - name: Archives
-        url: archives
-
-  homeInfoParams:
-    Title: "Hello there \U0001F44B"
-    Content: Welcome to my blog
+      - name: "Zenn"
+        url: "https://zenn.dev/taakuuyaa"
+        icon: "zenn"
 
   socialIcons:
     - name: x
       url: 'https://twitter.com/taakuuyaa_'
     - name: github
       url: 'https://github.com/taakuuyaa'
-
-  # favicon
-  assets:
-    favicon: '/favicon.svg'
-    favicon16x16: '/favicon.svg'
-    favicon32x32: '/favicon.svg'
-    apple_touch_icon: '/apple-touch-icon-180x180.png'
-    safari_pinned_tab: '/favicon.svg'
