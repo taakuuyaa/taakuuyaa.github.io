@@ -18,10 +18,6 @@ minify:
   disableXML: true
   minifyOutput: true
 
-taxonomies:
-  category: categories
-  tag: tags
-
 outputs:
   home:
     - HTML
@@ -30,7 +26,7 @@ outputs:
 
 params:
   env: production
-  description: "taakuuyaa's Blog"
+  description: "taakuuyaa's profile"
   author: taakuuyaa
   ShowReadingTime: true
   SetThemeAuto: true
