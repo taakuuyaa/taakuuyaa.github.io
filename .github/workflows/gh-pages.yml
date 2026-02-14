@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Set a branch name to trigger deployment
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
